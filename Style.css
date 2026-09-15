@@ -1,0 +1,258 @@
+/* CSS for Car Rental Firm 
+By: Tadhg, Daniel, Darragh and Conor */
+
+html, body 
+{
+    height: 100%;
+    margin: 0;
+}
+
+/* Style for page body */
+body 
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;  /* Removes the default spacing in the page */
+}
+
+/* style for headings (tite) */
+
+h1 
+{
+    text-align: center;
+    margin-top: 30px; /* adds space above */
+    color: #2c502e;
+}
+
+h2, p 
+{
+  margin: 10px;
+	text-align: center;
+}
+
+h4
+{
+    text-align: center;
+    margin-top: 30px;
+    color: #000000;
+}
+/* Nav Bar styling */
+.navbar 
+{
+	display: flex;
+	align-items: center; /* aligns tesxt vertically */
+    background-color: rgb(54, 104, 54);
+    padding: 10px; /* adds space within the navabr */
+    display: flex;
+    gap: 30px; /* adds a gap between each word in the navbar */
+}
+
+.navbar a,
+.indexNavbar a 
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* creates a hover effect in the navbar links when the mouse hovers over them */
+
+.navbar a:hover,
+.indexNavbar a:hover 
+{
+    color: #38bdf8;
+}
+
+/* Home page Specific styling */
+/* HOMEPAGE LAYOUT */
+
+/* banner images */
+.top-section img,
+.bottom-section img
+{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+	display: block;
+
+}
+
+/* navbar */
+.indexNavbar 
+{
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+	height: 30vh;
+    background-color: rgb(54, 104, 54);
+
+    gap: 25px;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+}
+
+.top-section,
+.indexNavbar,
+.bottom-section 
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* prevent overflow issues */
+* 
+{
+    box-sizing: border-box;
+}
+
+/* form container*/
+.form
+{
+    width: 450px;
+    margin: 40px auto; /* horizontially centers the form */
+    background: white;
+    padding: 25px; /* creates space within the form */
+    border-radius: 8px; /* rounds the corners of the form */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1); /* creates a sutble shadow behind the form */
+}
+
+/* form labels */
+
+label 
+{
+    font-weight: bold;
+}
+
+
+/* logo field */
+.logo
+{
+	width: 175px;
+	height: auto;
+	margin-left: auto; /* pushes the logo to the right side of the navbar */
+}
+
+/* input fieds */
+input,
+select 
+{
+	width: 100%;
+	box-sizing: border-box;   /* makes the width of the select and input boxes match when at 100% */
+    padding: 8px; 
+    margin-top: 5px; /* creates space above */
+    margin-bottom: 15px; /* creates space below */
+    border: 1px solid #ccc; /* creates a light grey border around the fields*/
+    border-radius: 4px; /* rounds the edges of the fields */
+}
+
+/* buttons styling */
+
+.submit 
+{
+    color: black;
+    border: 2px solid #20d81d; /* adds a green border around the submit buttons */
+    padding: 10px;
+    cursor: pointer; /* pointer displayed when hovered */
+}
+
+.reset
+{
+    color: black; 
+    border: none;
+    border: 2px solid #d81d1d; /* adds a red border around the reset/clear buttons */
+    cursor: pointer;
+}
+
+.submit:hover
+{
+    background-color: #20d81d; /* background colour for submit after the transition */
+    transition: 1s; /* 1 second transition duration */
+}
+
+.reset:hover 
+{
+    background-color: #d81d1d;
+    transition: 1s;
+    color: black; /* changes the text colour to black */
+}
+
+.button
+{
+    width: 450px;   /* change width */
+    height: 35px;        /* change height */
+    display: block; /* makes the button behave like a full width block */
+    margin: 20px auto;   
+    padding: 5px;
+}
+
+.conButton
+{
+    display: inline-block;
+    color: black;
+    border: 2px solid rgb(54, 104, 54);
+	padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+	border-radius: 8px;
+
+}
+
+.conButton:hover
+{
+	color: white;
+    background-color: rgb(54, 104, 54);
+    transition: .3s;
+}
+
+/* Drop Down code for the nav bar on the home page */
+.dropdown
+{
+    position: relative;
+}
+.dropdownContent 
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent a 
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; /* ensure that it can be clicked using its full width */
+  text-align: left;
+}
+
+/* Hover effect for dropdown */
+.dropdownContent a:hover 
+{
+    background-color: #d4d4d4;
+}
+
+/* show dropdown content when hovering with cursor */
+.dropdown:hover .dropdownContent 
+{
+  display: block
+}
+
+/* Listbox Styling for amend and delete screens */
+/* for car selection list */
+#listbox 
+{
+    width: 450px;          /* match forms width */
+    height: 35px;        /* reduce height */
+    display: block;
+    margin: 20px auto;   /* centered */
+    padding: 5px;
+}

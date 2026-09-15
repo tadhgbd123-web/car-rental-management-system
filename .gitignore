@@ -1,0 +1,5 @@
+db.inc.php
+.DS_Store
+._*
+__MACOSX/
+*.log

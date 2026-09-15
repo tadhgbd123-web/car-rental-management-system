@@ -1,0 +1,88 @@
+form 
+/*Modifies form*/
+{
+  position: relative;
+  /*Gives the ability to move form around relative to its normal position*/
+  margin: auto;
+  /*Horizontally centers the form within the page*/
+  width: 400px;
+  /*Displays a width of size 400px for the form*/
+  padding: 20px;
+  /*Displays a padding of size 20px for the form giving extra space around the edges*/
+  background-color: lightgreen;
+  /*Displays a background color of light green for the form*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*Displays a modern font for the form*/
+  border-radius: 10px;
+  /*Displays a border radius of size 10px for the form rounding the corners*/
+}
+
+title 
+/*Modifies title of form*/
+{
+  text-align: center;
+  /*Aligns title to the centre*/
+  color: #006400;
+  /*Displays a text color of dark green for the title*/
+}
+
+input[type=text],
+input[type=url],
+input[type=email]
+/*Modifies the text, url, and date input boxes, aligning all vertically*/
+{
+  position: absolute;
+  /*Gives the ability to move input boxes around relative to the nearest positioned ancestor*/
+  left: 220px;
+  /*Positions boxes 220px away from start of page positioning it to the right*/
+  width: 45%;
+  /*Displays a width of size 45% for the input boxes*/
+  padding: 12px;
+  /*Displays a padding of size 12px for the input boxes giving extra space around the edges*/
+  margin-top: -30px;
+  /*Displays a margin of size -30px positioning box up for the input boxes*/
+  border: 1px solid #ccc;
+  /*Displays a solid border of size 1px in the color light grey for the input boxes*/
+  border-radius: 10px;
+  /*Displays a border radius of size 10px for the input boxes rounding the corners*/
+  box-sizing: border-box;
+  /*Displays a box sizing of border box for the input boxes allowing the padding and border to be included in the forms total width and height*/
+}
+
+/* BUTTONS */
+.button 
+{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+    }
+
+
+.submit
+{
+    border: 3px solid green;
+}
+.clear
+{
+    border: 3px solid red;
+}
+
+.submit:hover
+{
+    background-color: green;
+    color: black;
+}
+.clear:hover 
+{
+    background-color: red;
+    color: black;
+    border-color: red;
+}
